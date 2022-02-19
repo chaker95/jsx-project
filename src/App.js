@@ -1,25 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import logo from "./logo.svg";
+import edabit from "./4.png"
+import "./style.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return (
+        <div>
+            <div style={{ border: "solid 5px black", maxWidth: "100vw" }}>
+                <h1 className="title red"> CHAKER </h1>
+
+                <br />
+                <br />
+                 <div className="photos">
+                     <img style={{width:"500px",height:"400px"}} src={edabit} alt="edabit" />
+                     <img style={{width:"500px",height:"400px"}} src={"/success.png"} alt="success " />
+                </div>
+            </div>
+
+            <video width="320" height="240" controls>
+                <source src={"https://www.youtube.com/watch?v=8wLaiDi8Ics"} type="YTsolution" />
+            </video>
+        </div>
+    );
 }
 
 export default App;
